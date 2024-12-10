@@ -4,6 +4,7 @@ import React from 'react';
 import { ExpertiseandSupport, QualityAssurance, SustainabilityFocus, TimelyDelivery } from '../../../public/Image/Images/page';
 import { motion } from 'framer-motion'; // Importing framer-motion
 
+
 const WhyChooseUs = () => {
   return (
     <div className="mt-[150px] mb-[100px] relative overflow-hidden">
