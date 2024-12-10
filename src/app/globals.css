@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/app/assets/fonts/Poppins/Poppins-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Assistant";
+  src: url("/src/app/assets/fonts/Assistant/Assistant-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+    
+}
+
+.slick-prev {
+  color: red; /* Example color (white) */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: background color */
+  border-radius: 50%; /* Optional: round the arrow */
+}
+
+/* Change the color of the next arrow */
+.slick-next {
+  color: red; /* Example color (white) */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: background color */
+  border-radius: 50%; /* Optional: round the arrow */
+}
+.custom-arrow{
+  color: red;
+}
+/* Hover effect on arrows */
+.slick-prev:hover, .slick-next:hover {
+  color: #ff6347; /* Example: change color on hover */
+  font-size: 28px; /* Example: increase size */
+}
+
+.img-filter{
+  filter: invert(1);
+}
+
+.box-shadow1{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box-shadow_whychoose{
+  box-shadow: 0px 1px 6px -3px;
+}
+
+.book_call{
+  box-shadow: 8px 10px;
+}
