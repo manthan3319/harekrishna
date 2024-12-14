@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Appointment = () => {
   const containerVariants = {
@@ -31,17 +32,17 @@ const Appointment = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <p className="md:text-[28px] mb-2">
-            Get Your Quote or Call: (080) 5388-273-284
+            Get Your Quote or Call: +91 9812106616
           </p>
           <h3 className="md:text-[36px] mb-12">
             Are You Ready? Book Appointment Now!
           </h3>
-          <motion.button
+          <Link href="/ContactUs"
             className="py-3 px-7 text-lg bg-primaryColor font-assistance hover:bg-secondaryColor duration-300"
             whileHover={{ scale: 1.1 }}
           >
             Read More
-          </motion.button>
+          </Link>
         </motion.div>
       </div>
     </motion.div>

@@ -41,7 +41,7 @@ const Experience = () => {
       >
         <div className="flex md:flex-row flex-col bg-normalbg rounded-r-[15px] border-l-0">
           {/* Left Image Section */}
-          <motion.div
+          {/* <motion.div
             className="relative flex-1 block md:hidden"
             variants={imageVariants}
           >
@@ -56,19 +56,16 @@ const Experience = () => {
               <h1 className="text-[146px] leading-none">20</h1>
               <p className="tracking-[5px]">YEAR EXPERIENCE WORKING</p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
-            className="flex-1 bg-cover bg-center relative hidden md:block"
+            className="flex-1 bg-cover bg-center relative min-h-[500px]"
             style={{
-              backgroundImage: `url('Image/constructiion-building-img.png')`,
+              backgroundImage: `url('Image/concrete factory.svg')`,
             }}
             variants={imageVariants}
           >
-            <div className="text-white font-bold font-poppins absolute top-[35%] text-center left-[20%]">
-              <h1 className="text-[146px] leading-none">20</h1>
-              <p className="tracking-[5px]">YEAR EXPERIENCE WORKING</p>
-            </div>
+
           </motion.div>
 
           {/* Right Text Section */}
@@ -79,9 +76,8 @@ const Experience = () => {
             <p className="text-[18px] font-assistance mb-4">
               <b>Hare Krishna RMC LLP</b> is a leading ready-mix concrete supplier
               based in Navsari, Gujarat. Established with a vision to redefine
-              the construction industry, we bring over 20 years of unparalleled
-              experience and expertise in delivering high-quality concrete
-              solutions to our clients.
+              the construction industry, we deliver high-quality concrete solutions
+              to our clients.
             </p>
             <p className="text-[18px] font-assistance mb-4">
               We specialize in providing durable and sustainable construction
@@ -113,6 +109,7 @@ const Experience = () => {
               </p>
             </div>
           </motion.div>
+
         </div>
       </motion.div>
     </div>

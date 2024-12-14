@@ -14,9 +14,9 @@ const Dashboard = () => {
       <Experience/>
       <Services/>
       <Appointment/>
-      <WhatWeDo/>
+      {/* <WhatWeDo/> */}
       <WhyChooseUs/>
-      <OurClients/>
+      {/* <OurClients/> */}
     </div>
   )
 }

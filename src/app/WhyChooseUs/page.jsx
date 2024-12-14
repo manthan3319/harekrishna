@@ -11,9 +11,9 @@ const WhyChooseUs = () => {
       <div className="absolute bg-primaryColor md:w-[25%] w-[50%] h-[598px] top-[-50px] left-0 z-[-1]"></div>
       <div className="lg:max-w-[1440px] px-[20px] m-auto">
         <div className="flex md:flex-row flex-col justify-between relative z-[99]">
-          <motion.div 
+          <motion.div
             className="md:w-[40%] w-[100%] bg-seconderyYellow p-[30px] book_call"
-            initial={{ opacity: 0, x: -100 }} 
+            initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}  // Trigger animation when component comes into view
             transition={{ duration: 1 }}
             viewport={{ once: true }}  // Ensures the animation happens only once when the component comes into view
@@ -24,20 +24,20 @@ const WhyChooseUs = () => {
             </p>
 
             <div className="flex flex-col gap-[15px]">
-              <input 
-                type="text" 
-                placeholder="Enter Your Name:" 
-                className="w-full py-[15px] text-white placeholder-white font-poppins text-[15px] outline-none bg-transparent border-b border-black" 
+              <input
+                type="text"
+                placeholder="Enter Your Name:"
+                className="w-full py-[15px] text-white placeholder-white font-poppins text-[15px] outline-none bg-transparent border-b border-black"
               />
-              <input 
-                type="email" 
-                placeholder="Enter Your Email:" 
-                className="w-full py-[15px] text-white placeholder-white font-poppins text-[15px] outline-none bg-transparent border-b border-black" 
+              <input
+                type="email"
+                placeholder="Enter Your Email:"
+                className="w-full py-[15px] text-white placeholder-white font-poppins text-[15px] outline-none bg-transparent border-b border-black"
               />
-              <input 
-                type="Number" 
-                placeholder="Enter Your Number:" 
-                className="w-full py-[15px] text-white placeholder-white font-poppins text-[15px] outline-none bg-transparent border-b border-black" 
+              <input
+                type="Number"
+                placeholder="Enter Your Number:"
+                className="w-full py-[15px] text-white placeholder-white font-poppins text-[15px] outline-none bg-transparent border-b border-black"
               />
             </div>
             <div className="mt-[30px]">
@@ -45,9 +45,9 @@ const WhyChooseUs = () => {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="md:w-[55%] w-[100%]"
-            initial={{ opacity: 0, y: 100 }} 
+            initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}  // Trigger animation when component comes into view
             transition={{ duration: 1 }}
             viewport={{ once: true }}  // Ensures the animation happens only once
@@ -55,50 +55,51 @@ const WhyChooseUs = () => {
             <p className="bg-seconderyYellow py-[15px] px-[20px] text-white inline-block rounded-sm text-[18px] font-poppins">Benefits of working with us</p>
             <h1 className="text-[35px] font-poppins font-semibold my-[35px]">Why Choose Us</h1>
 
-            <motion.div 
+            <motion.div
               className="grid grid-cols-2 gap-[15px]"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}  // Trigger animation when component comes into view
               transition={{ duration: 1.5 }}
               viewport={{ once: true }}  // Ensures the animation happens only once
             >
-              <motion.div 
+              <motion.div
                 className="bg-white p-[10px] box-shadow_whychoose"
-                whileHover={{ scale: 1.05 }} 
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <Image src={QualityAssurance} className="w-[80px]" alt="QualityAssurance" />
-                <h1>Quality Assurance</h1>
+                <Image src={QualityAssurance} className="w-[80px]" alt="Advanced Technology" />
+                <h1>Advanced Technology</h1>
                 <p>Consistent, high-quality concrete for reliable structures.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-[10px] box-shadow_whychoose"
-                whileHover={{ scale: 1.05 }} 
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <Image src={ExpertiseandSupport} className="w-[80px]" alt="ExpertiseandSupport" />
-                <h1>Expertise and Support</h1>
+                <Image src={ExpertiseandSupport} className="w-[80px]" alt="Reliable Partnerships" />
+                <h1>Reliable Partnerships</h1>
                 <p>Guidance throughout the project lifecycle.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-[10px] box-shadow_whychoose"
-                whileHover={{ scale: 1.05 }} 
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <Image src={TimelyDelivery} className="w-[80px]" alt="TimelyDelivery" />
-                <h1>Timely Delivery</h1>
+                <Image src={TimelyDelivery} className="w-[80px]" alt="Efficient Execution" />
+                <h1>Efficient Execution</h1>
                 <p>Minimizing delays, optimizing construction schedules.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-[10px] box-shadow_whychoose"
-                whileHover={{ scale: 1.05 }} 
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <Image src={SustainabilityFocus} className="w-[80px]" alt="SustainabilityFocus" />
-                <h1>Sustainability Focus</h1>
+                <Image src={SustainabilityFocus} className="w-[80px]" alt="Eco-Friendly Practices" />
+                <h1>Eco-Friendly Practices</h1>
                 <p>Eco-friendly practices for greener projects.</p>
               </motion.div>
             </motion.div>
+
           </motion.div>
         </div>
       </div>

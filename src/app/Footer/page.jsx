@@ -14,7 +14,7 @@ const Footer = () => {
       transition={{ duration: 1 }}
     >
       <div className="lg:max-w-[1440px] px-[20px] m-auto">
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-[25px] sm:gap-[25px] md:gap-[25px] ld:gap-0'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-[25px] sm:gap-[25px] md:gap-[25px] ld:gap-0'>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}  // Trigger when section comes into view
@@ -28,7 +28,8 @@ const Footer = () => {
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
                   </div>
                   <div>
-                    <p className='text-[18px] font-assistance'>207, PARDI ARAK, NAVSARI, GUJARAT 396445</p>
+                    <p className='text-[18px] font-assistance'>207, Vill. PARDI ARAK, NEAR PALSANA CHOKDI, 
+                    Distt. NAVSARI, GUJARAT 396475</p>
                   </div>
                 </Link>
               </div>
@@ -83,14 +84,13 @@ const Footer = () => {
             <h1 className='mb-[11px] font-poppins font-bold'>QUICK LINKS</h1>
             <ul className='flex flex-col gap-[25px]'>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/">About Us</Link></li>
-              <li><Link href="/">Our Services</Link></li>
-              <li><Link href="/">Blog</Link></li>
-              <li><Link href="/">Contact</Link></li>
+              <li><Link href="/Aboutus">About Us</Link></li>
+              <li><Link href="/OurServices">Our Services</Link></li>
+              <li><Link href="/ContactUs">Contact</Link></li>
             </ul>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}  // Trigger when section comes into view
             transition={{ duration: 0.8 }}
@@ -103,7 +103,7 @@ const Footer = () => {
               <Link href="/" className='text-[30px] text-primaryColor'><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
               <Link href="/" className='text-[30px] text-primaryColor'><i className="fa fa-whatsapp" aria-hidden="true"></i></Link>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 

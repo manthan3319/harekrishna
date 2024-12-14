@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
-import { service1 } from "../../../public/Image/Images/page";
+import { service1, Services2, services3, services4, services5, services6, services7, services8, services9 } from "../../../public/Image/Images/page";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,25 +20,60 @@ const serviceData = [
   },
   {
     id: 2,
-    image: service1,
+    image: Services2,
     title: "Sand operations",
     description:
       "Timely and efficient delivery of Ready-Mix Concrete tailored to meet project requirements with utmost reliability.",
   },
   {
     id: 3,
-    image: service1,
-    title: "Transport services",
-    description:
-      "Offering tailored solutions to meet diverse project needs, ensuring flexibility and precision in concrete applications.",
-  },
-  {
-    id: 4,
-    image: service1,
+    image: services3,
     title: "Construction Materials",
     description:
       "Providing high-quality construction materials for diverse projects, ensuring durability and cost-efficiency.",
   },
+  {
+    id: 5,
+    image: services4,
+    title: "Manufacturing",
+    description:
+      "We specialize in the manufacturing and supply of premium-quality ready-mix concrete, designed to meet the precise structural requirements of any project. Whether for residential, commercial, or industrial use, our concrete mixes are tailored for durability, strength, and efficiency.",
+  },
+  {
+    id: 6,
+    image: services5,
+    title: "Technical Consultancy",
+    description:
+      "Our team of experts offers specialized consultancy services for project plants. From setup and operation to optimizing concrete production processes, we provide paid consultancy to help you achieve operational excellence and cost efficiency.",
+  },
+  {
+    id: 7,
+    image: services6,
+    title: "Custom Mix Design",
+    description:
+      "Every construction project is unique, and so are its requirements. Our custom mix design service ensures that the concrete blends are carefully tailored to meet exact project specifications, including strength, workability, and durability.",
+  },
+  {
+    id: 8,
+    image: services7,
+    title: "Raw Material Testing Facility",
+    description:
+      "Quality begins with the raw materials. Our state-of-the-art laboratory is equipped to rigorously test and evaluate raw materials to ensure that the final concrete mix meets the highest industry standards for safety and performance.",
+  },
+  {
+    id: 9,
+    image: services8,
+    title: "Technical Support",
+    description:
+      "Concrete-related challenges? Weve got you covered. From mix design optimization to practical application advice, our technical support team is here to assist you in achieving the best outcomes for your construction projects.",
+  },
+  {
+    id: 10,
+    image: services9,
+    title: "Infra Rental",
+    description:
+      "Seamlessly execute your projects with our reliable infrastructure rental services. We provide high-quality transit mixers, pumps, and other equipment, ensuring timely project completion without compromising quality.",
+  }
 ];
 
 const Services = () => {

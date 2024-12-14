@@ -3,7 +3,7 @@ import HareKrishnaLogo from '../Hare-Krishna-Logo.jpeg';
 import BannerShadow from '../BannerShadow.png';
 import yearExperience from '../20yearExperience.jpg'
 import constructiionBuildingImg from '../constructiion-building-img.png'
-import service1 from '../service-1.jpg'
+import service1 from '../service1.svg'
 import appointment from '../appointment.jpg';
 import Manufacturing from "../Manufacturing.svg";
 import TechnicalConsultancy from "../Technical Consultancy.svg";
@@ -21,9 +21,26 @@ import location from "../location.svg";
 import gmailicon from "../emilicon.svg"
 import callicon from '../callicon.svg';
 import MixerTruck from "../Mixer Truck Isolated.png";
-
+import concretefactory from "../concrete factory.svg";
+import Services2 from "../service2.svg";
+import services3  from "../service3.svg";
+import services4 from "../services4.svg";
+import services5 from "../services5.svg";
+import services6 from "../services6.svg";
+import services7 from "../services7.svg";
+import services8 from "../services8.svg";
+import services9 from "../service9.svg";
 
 export{
+    services9,
+    services8,
+    services7,
+    services6,
+    services5,
+    services4,
+    services3,
+    Services2,
+    concretefactory,
     MixerTruck,
     callicon,
     gmailicon,

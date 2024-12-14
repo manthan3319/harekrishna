@@ -25,11 +25,11 @@ const TopNavbar = () => {
             <p>+91 9812106616</p>
           </p>
         </span>
-        <div className="flex flex-row gap-[15px]">
+        {/* <div className="flex flex-row gap-[15px]">
           <FaFacebookF className="text-gray-100  hover:text-black duration-200" />
           <FaTwitter className="text-gray-100    hover:text-black duration-200" />
           <FaLinkedinIn className="text-gray-100     hover:text-black duration-200" />
-        </div>
+        </div> */}
 
       </div>
     </div>
