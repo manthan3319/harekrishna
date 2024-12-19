@@ -41,32 +41,13 @@ const Experience = () => {
       >
         <div className="flex md:flex-row flex-col bg-normalbg rounded-r-[15px] border-l-0">
           {/* Left Image Section */}
-          {/* <motion.div
-            className="relative flex-1 block md:hidden"
-            variants={imageVariants}
-          >
-            <div>
-              <Image
-                src={constructiionBuildingImg}
-                alt="year experience"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="text-white font-bold font-poppins absolute top-[35%] text-center left-[20%]">
-              <h1 className="text-[146px] leading-none">20</h1>
-              <p className="tracking-[5px]">YEAR EXPERIENCE WORKING</p>
-            </div>
-          </motion.div> */}
-
           <motion.div
             className="flex-1 bg-cover bg-center relative min-h-[500px]"
             style={{
               backgroundImage: `url('Image/concrete factory.svg')`,
             }}
             variants={imageVariants}
-          >
-
-          </motion.div>
+          ></motion.div>
 
           {/* Right Text Section */}
           <motion.div className="flex-1 px-6" variants={textVariants}>
@@ -75,7 +56,7 @@ const Experience = () => {
             </h2>
             <p className="text-[18px] font-assistance mb-4">
               <b>Hare Krishna RMC LLP</b> is a leading ready-mix concrete supplier
-              based in Navsari, Gujarat. Established with a vision to redefine
+              based in Palsana, Gujarat. Established with a vision to redefine
               the construction industry, we deliver high-quality concrete solutions
               to our clients.
             </p>
@@ -109,7 +90,6 @@ const Experience = () => {
               </p>
             </div>
           </motion.div>
-
         </div>
       </motion.div>
     </div>

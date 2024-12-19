@@ -17,20 +17,19 @@ const Banner = () => {
   const [animationClass, setAnimationClass] = useState("");
 
   const [ref, inView] = useInView({
-    threshold: 0.5, // Trigger animation when 50% of the element is in view
-    triggerOnce: true, // Animation should happen only once
+    threshold: 0.5, 
+    triggerOnce: true, 
   });
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimationClass("fade-animation"); // Trigger animation
+      setAnimationClass("fade-animation"); 
       setTimeout(() => {
-        // Update indices after animation completes
         setCurrentImageIndex(nextImageIndex);
         setNextImageIndex((nextImageIndex + 1) % images.length);
-        setAnimationClass(""); // Reset animation
-      }, 1000); // Match animation duration
-    }, 5000); // 4 seconds pause + 1 second animation
+        setAnimationClass(""); 
+      }, 1000); 
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, [nextImageIndex, images.length]);
@@ -46,7 +45,6 @@ const Banner = () => {
   return (
     <div style={backgroundStyle} className="bg-primaryColor overflow-hidden">
       <div className="relative overflow-hidden h-screen">
-        {/* Sliding Backgrounds */}
         <div
           className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-transform duration-1000 ${
             animationClass === "fade-animation" ? "opacity-0" : "opacity-100"
@@ -79,10 +77,10 @@ const Banner = () => {
                 Transforming Dreams into
               </h4>
               <h1 className="lg:text-[66px] md:text-[50px] sm:text-[45px] text-[35px] mb-8 font-extrabold">
-              Reliable Foundations with NAVSARI <span className="text-[#34A3DB]">HARE KRISHNA</span> Your Trusted Partner.
+              Reliable Foundations with  <span className="text-[#34A3DB]">HARE KRISHNA RMC</span> Your Trusted Partner.
               </h1>
               <p className="font-assistance text-lg mb-[20px] text-[20px]">
-                Building unshakable roots for your ambitions.
+              Crafting sturdy bases for your success.
               </p>
               <Link href="/ContactUs" className="text-white w-40 mt-[45px] text-center inline-block bg-primaryColor py-[10px] px-5 text-lg font-medium rounded-3xl hover:bg-[#34A3DB]">
                 Read More

@@ -67,13 +67,6 @@ const serviceData = [
     description:
       "Concrete-related challenges? Weve got you covered. From mix design optimization to practical application advice, our technical support team is here to assist you in achieving the best outcomes for your construction projects.",
   },
-  {
-    id: 10,
-    image: services9,
-    title: "Infra Rental",
-    description:
-      "Seamlessly execute your projects with our reliable infrastructure rental services. We provide high-quality transit mixers, pumps, and other equipment, ensuring timely project completion without compromising quality.",
-  }
 ];
 
 const Services = () => {
@@ -85,8 +78,7 @@ const Services = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: <FaLongArrowAltLeft className="custom-arrow slick-prev" />,
-    nextArrow: <FaLongArrowAltRight className="custom-arrow slick-next" />,
+
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
       { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 1 } },
@@ -107,7 +99,7 @@ const Services = () => {
 
   return (
     <div ref={ref}>
-      <div className="lg:max-w-[1440px] m-auto px-[20px] overflow-hidden">
+      <div className="lg:max-w-[1440px] m-auto px-[30px] overflow-hidden relative">
         {/* Title Section */}
         <motion.div
           className="text-center font-poppins mt-20"
@@ -123,23 +115,21 @@ const Services = () => {
           </p>
         </motion.div>
 
-        {/* Slider Section */}
         <motion.div
-          className="mt-10"
+          className="mt-10 m-auto"
           variants={fadeInVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <Slider {...sliderSettings} className="flex flex-wrap justify-center gap-6">
+          <Slider {...sliderSettings} className="flex flex-wrap justify-center gap-6 relative">
             {serviceData.map((service) => (
               <motion.div
                 key={service.id}
-                className="max-w-[348px] h-[450px] border-l border-r border-b-seconderyYellow border-b-[4px] flex flex-col"
+                className="p-[20px] border-l border-r border-b-seconderyYellow border-b-[4px] flex flex-col h-[500px] justify-between" // Set a fixed height here
                 variants={fadeInVariants}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
               >
-                {/* Image Section */}
                 <div className="h-[200px] overflow-hidden">
                   <Image
                     src={service.image}
@@ -150,15 +140,15 @@ const Services = () => {
                   />
                 </div>
 
-                {/* Button Section */}
                 <div className="mt-5 flex items-center justify-center gap-7 text-[18px] font-semibold text-gray-800 group duration-500 px-8 py-3 rounded-lg bg-seconderyYellow hover:bg-primaryColor hover:text-white">
                   <FaLongArrowAltRight className="hidden group-hover:flex" />
                   <button>{service.title}</button>
                 </div>
 
-                {/* Description Section */}
                 <p className="py-5 px-3 text-center flex-grow">{service.description}</p>
               </motion.div>
+
+
             ))}
           </Slider>
         </motion.div>

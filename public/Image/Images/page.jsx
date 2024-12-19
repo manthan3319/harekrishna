@@ -30,8 +30,11 @@ import services6 from "../services6.svg";
 import services7 from "../services7.svg";
 import services8 from "../services8.svg";
 import services9 from "../service9.svg";
+import whatshappicon from "../whatshapp icon.svg";
+
 
 export{
+    whatshappicon,
     services9,
     services8,
     services7,

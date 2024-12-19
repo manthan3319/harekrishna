@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import WhyChooseUs from "../WhyChooseUs/page";
@@ -19,18 +19,21 @@ const ContactUs = () => {
             title: "Email Us",
             description: "harekrishna.rmc16@gmail.com",
             icon: "fa-envelope",
+            link: "mailto:harekrishna.rmc16@gmail.com"  // Mailto link for email
         },
         {
             id: 2,
             title: "WhatsApp",
             description: "+91 9812106616",
             icon: "fa-whatsapp",
+            link: "https://wa.me/919812106616"  // WhatsApp link for direct messaging
         },
         {
             id: 3,
             title: "Location",
             description: "207, Pardi Arak, Navsari, Gujarat 396445",
             icon: "fa fa-map-marker",
+            link: "https://www.google.com/maps?q=207,+Pardi+Arak,+Navsari,+Gujarat+396445"  // Google Maps link
         },
     ];
 
@@ -71,7 +74,11 @@ const ContactUs = () => {
                                 <i className={`fa ${info.icon}`} aria-hidden="true"></i>
                             </div>
                             <h3 className="text-[24px] font-bold mb-2">{info.title}</h3>
-                            <p className="text-gray-600 text-[16px]">{info.description}</p>
+                            <p className="text-gray-600 text-[16px]">
+                                <a href={info.link} className="text-blue-500 hover:underline">
+                                    {info.description}
+                                </a>
+                            </p>
                         </motion.div>
                     ))}
                 </div>

@@ -73,3 +73,7 @@
 .book_call{
   box-shadow: 8px 10px;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: black !important;
+}
